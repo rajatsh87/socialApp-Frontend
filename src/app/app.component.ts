@@ -9,8 +9,8 @@ import { Post } from './post';
 export class AppComponent {
   title = 'socialApp-Frontend';
   posts:Post[]=[]
-  onpostCreated(post:Post){
-    this.posts.push(post)
-    // console.log("added post:",post)
-  }
+  // onpostCreated(post:Post){
+  //   this.posts.push(post)
+  //   // console.log("added post:",post)
+  // }
 }
