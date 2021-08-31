@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Post } from './post';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'socialApp-Frontend';
+  posts:Post[]=[]
+  onpostCreated(post:Post){
+    this.posts.push(post)
+    // console.log("added post:",post)
+  }
 }
